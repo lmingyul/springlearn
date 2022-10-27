@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 配置 person 实例，其实现类是 Person -->
+    <bean id="person" class="setterinjection.Person">
+        <!-- 下面只有一个 constructor-arg 子元素，
+            驱动 Spring 调用 Person 带一个参数的构造器来创建对象 -->
+        <property name="weapon" ref="sword"/>
+    </bean>
+
+    <!-- 配置 sword 实例，其实现类是 Sword -->
+    <bean id="sword" class="setterinjection.Sword">
+        <constructor-arg index="0" value="50"/>
+    </bean>
+
+    <!-- 配置 gun 实例，其实现类是 Gun -->
+    <bean id="gun" class="setterinjection.Gun">
+        <constructor-arg index="0" value="1000"/>
+    </bean>
+
+</beans>
