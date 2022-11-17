@@ -5,8 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mingyu</groupId>
-    <artifactId>dependencyInjection</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>beanfactory</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
