@@ -17,7 +17,4 @@ public class Test {
         car.drive();
     }
 
-    public static String getCar(String var1, String var2) {
-        return "hello";
-    }
 }
